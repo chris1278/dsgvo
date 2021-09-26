@@ -24,6 +24,12 @@
 			"lang-min-ver": "1.0.0",
 			"soft-require": {
 			"phpbb/phpbb": ">= 3.2.6,<3.4.0@dev"
+		},
+		"version-check": {
+			"host": "raw.githubusercontent.com",
+			"directory": "/chris1278/dsgvo/main",
+			"filename": "dsgvo.json",
+			"ssl": true
 		}
 	}
 }

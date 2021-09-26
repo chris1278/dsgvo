@@ -162,7 +162,7 @@ class ucp_listener implements EventSubscriberInterface
 				break;
 
 			case 'u_dsgvo_posts_download':
-				if (!$this->auth->acl_get('u_dsgvo_profile_download'))
+				if (!$this->auth->acl_get('u_dsgvo_posts_download'))
 				{
 					trigger_error('NOT_AUTHORISED');
 				}

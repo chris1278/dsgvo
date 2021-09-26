@@ -56,6 +56,10 @@ class ucp_listener implements EventSubscriberInterface
 	{
 		$permissions = $event['permissions'];
 		$permissions += [
+			'u_dsgvo_modul_overview'	=> [
+				'lang'		=> 'ACL_U_DSGVO_OVERVIEW',
+				'cat'		=> 'profile'
+			],
 			'u_dsgvo_profile_download'	=> [
 				'lang'		=> 'ACL_U_DSGVO_PROFILE_DOWNLOAD',
 				'cat'		=> 'profile'
@@ -92,6 +96,7 @@ class ucp_listener implements EventSubscriberInterface
 				{
 					trigger_error('NOT_AUTHORISED');
 				}
+
 				$sql = 'SELECT user_id, user_ip, user_regdate, username, user_email, user_lastvisit, user_posts, user_lang, user_timezone, user_dateformat,
 						user_avatar, user_sig, user_jabber
 					FROM ' .  USERS_TABLE . '

@@ -86,3 +86,15 @@ jobs:
               run: phpBB/vendor/bin/EPV.php run --dir="phpBB/ext/$EXTNAME/"
               working-directory: ./phpBB3
     # END Basic Checks Job
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

@@ -1,7 +1,7 @@
 {
 	"stable": {
 		"1.0": {
-			"current": "1.0.1",
+			"current": "1.0.0",
 			"download": "https://github.com/Chris1278/dsgvo",
 			"announcement": "https://www.phpbb.de/community/viewtopic.php?f=149&t=245795",
 			"eol": null,

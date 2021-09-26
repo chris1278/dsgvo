@@ -1,0 +1,15 @@
+services:
+   chris1278.dsgvo.controller:
+        class: chris1278\dsgvo\event\ucp_listener
+        arguments:
+            - '@auth'
+            - '@config'
+            - '@dbal.conn'
+            - '@dispatcher'
+            - '@user'
+            - '@template'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+        tags:
+            - {name: event.listener}
+    

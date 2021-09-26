@@ -92,11 +92,6 @@ class ucp_listener implements EventSubscriberInterface
 				break;
 
 			case 'dsgvo_profile_download':
-				if (!$this->auth->acl_get('u_dsgvo_profile_download'))
-				{
-					trigger_error('NOT_AUTHORISED');
-				}
-
 				$sql = 'SELECT user_id, user_ip, user_regdate, username, user_email, user_lastvisit, user_posts, user_lang, user_timezone, user_dateformat,
 						user_avatar, user_sig, user_jabber
 					FROM ' .  USERS_TABLE . '
@@ -167,11 +162,6 @@ class ucp_listener implements EventSubscriberInterface
 				break;
 
 			case 'u_dsgvo_posts_download':
-				if (!$this->auth->acl_get('u_dsgvo_posts_download'))
-				{
-					trigger_error('NOT_AUTHORISED');
-				}
-
 				header("Content-type: text/csv");
 				header("Content-Disposition: attachment; filename=my_post_data.csv");
 				header("Pragma: no-cache");

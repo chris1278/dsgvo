@@ -56,10 +56,6 @@ class ucp_listener implements EventSubscriberInterface
 	{
 		$permissions = $event['permissions'];
 		$permissions += [
-			'u_dsgvo_overview'	=> [
-				'lang'		=> 'ACL_U_DSGVO_OVERVIEW',
-				'cat'		=> 'profile'
-			],
 			'u_dsgvo_profile_download'	=> [
 				'lang'		=> 'ACL_U_DSGVO_PROFILE_DOWNLOAD',
 				'cat'		=> 'profile'

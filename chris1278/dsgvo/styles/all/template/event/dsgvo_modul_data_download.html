@@ -1,0 +1,14 @@
+<h2>{{ lang('UCP_DSGVO_DATA') }}</h2>
+<div class="panel">
+<p>{{ lang('PROFILE_DOWNLOAD_INFO') }}</p>
+	<fieldset>
+		<dl class="dgsvo-dl">
+			{% if FORMAT_OF_POST %}
+			<dt class="dgsvo-dt"><label for="u_dgsvo_posts_download">{{ lang('DSGVO_POST_ALL')  ~ lang('COLON') }}</label><br /><span id="normal-view" class="dgsvo-span">{{ lang('DSGVO_POST_ALL_EXPLAIN') }}</span><span id="normal-res" class="dgsvo-span">{{ lang('DSGVO_POST_ALL_EXPLAIN') }}</span></dt>
+			{% else %}
+			<dt class="dgsvo-dt"><label for="u_dgsvo_posts_download">{{ lang('DSGVO_POST_META')  ~ lang('COLON') }}</label><br /><span id="normal-view" class="dgsvo-span">{{ lang('DSGVO_POST_META_EXPLAIN') }}</span><span id="normal-res" class="dgsvo-span">{{ lang('DSGVO_POST_META_EXPLAIN') }}</span></dt>
+			{% endif %}
+			<dd class="dgsvo-dd"><a href="{{ U_DSGVO_POSTS_DOWNLOAD }}" class="button"><span>{{ lang('DSGVO_DOWNLOAD_BUTTON') }}</span> <i class="icon fa fa-download fa-fw"></i> </a></dd>
+		</dl>
+	</fieldset>
+</div>

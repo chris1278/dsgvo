@@ -31,7 +31,7 @@ class ucp_module extends \phpbb\db\migration\migration
 					'module_basename'	=> '\chris1278\dsgvo\ucp\ucp_dsgvo_module',
 					'module_langname'	=> 'UCP_DSGVO_OVERVIEW',
 					'module_mode'		=> 'dsgvo_overview',
-					'module_auth'		=> 'ext_chris1278/dsgvo && acl_u_dsgvo_modul_overview',
+					'module_auth'		=> 'ext_chris1278/dsgvo',
 				]
 			]],
 			['module.add', [

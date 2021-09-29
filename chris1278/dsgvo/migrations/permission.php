@@ -20,24 +20,10 @@ class permission extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return [
-			['permission.add', ['u_dsgvo_modul_overview']],
-				['permission.permission_set', ['ADMINISTRATORS', 'u_dsgvo_modul_overview', 'group']],
-				['permission.permission_set', ['GLOBAL_MODERATORS', 'u_dsgvo_modul_overview', 'group']],
-				['permission.permission_set', ['REGISTERED', 'u_dsgvo_modul_overview', 'group']],
-				['permission.permission_set', ['REGISTERED_COPPA', 'u_dsgvo_modul_overview', 'group']],
-				['permission.permission_set', ['NEWLY_REGISTERED', 'u_dsgvo_modul_overview', 'group']],
 			['permission.add', ['u_dsgvo_profile_download']],
-				['permission.permission_set', ['ADMINISTRATORS', 'u_dsgvo_profile_download', 'group']],
-				['permission.permission_set', ['GLOBAL_MODERATORS', 'u_dsgvo_profile_download', 'group']],
 				['permission.permission_set', ['REGISTERED', 'u_dsgvo_profile_download', 'group']],
-				['permission.permission_set', ['REGISTERED_COPPA', 'u_dsgvo_profile_download', 'group']],
-				['permission.permission_set', ['NEWLY_REGISTERED', 'u_dsgvo_profile_download', 'group']],
 			['permission.add', ['u_dsgvo_posts_download']],
-				['permission.permission_set', ['ADMINISTRATORS', 'u_dsgvo_posts_download', 'group']],
-				['permission.permission_set', ['GLOBAL_MODERATORS', 'u_dsgvo_posts_download', 'group']],
 				['permission.permission_set', ['REGISTERED', 'u_dsgvo_posts_download', 'group']],
-				['permission.permission_set', ['REGISTERED_COPPA', 'u_dsgvo_posts_download', 'group']],
-				['permission.permission_set', ['NEWLY_REGISTERED', 'u_dsgvo_posts_download', 'group']],
 		];
 	}
 }

@@ -31,6 +31,7 @@ $lang = array_merge($lang, [
 	'DSGVO_POST_META_EXPLAIN'				=>	'Hier können Sie die von Ihnen erstellten Themen als Übersicht herunterladen.',
 	'DSGVO_POST_ALL'						=>	'Themen, Beiträge und weitere Informationen',
 	'DSGVO_POST_ALL_EXPLAIN'				=>	'Hier können Sie die von Ihnen erstellten Themen als Übersicht herunterladen.',
+	'NO_PERM_DGSVO'							=>	'Sie haben keine Berechtigung, diesen Bereich zu betreten.',
 	'DSGVO_DOWNLOAD_BUTTON'					=>	'Herunterladen',
 	//For the Info Boxes
 	'UCP_DSGVO_MODULE'						=>	'DSGVO/GDPR Private Download´s',

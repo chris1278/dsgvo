@@ -18,7 +18,6 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang,[
-	'ACL_U_DSGVO_OVERVIEW'						=> 'DSGVO - Kann die Übersicht/Erläuterungen sehen',
 	'ACL_U_DSGVO_PROFILE_DOWNLOAD'				=> 'DSGVO - Kann eigene Profildaten herunterladen',
 	'ACL_U_DSGVO_POSTS_DOWNLOAD'				=> 'DSGVO - Kann eigene Themen und/oder Beiträge herunterladen (Je nach dem was im ACP der Extension eingestellt wurde)',
 ]);

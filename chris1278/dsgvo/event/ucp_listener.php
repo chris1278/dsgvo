@@ -85,7 +85,7 @@ class ucp_listener implements EventSubscriberInterface
 	{
 		switch ($event['mode'])
 		{
-			case 'profile_download':
+			case 'user_profile_download':
 				$this->template->assign_vars([
 					'U_DSGVO_PROFILE_DOWNLOAD'		=> $this->auth->acl_get('u_dsgvo_profile_download') ? append_sid("{$this->phpbb_root_path}ucp.$this->php_ext", 'mode=dsgvo_profile_download') : '',
 					]);
@@ -135,7 +135,7 @@ class ucp_listener implements EventSubscriberInterface
 				extract($this->phpbb_dispatcher->trigger_event('chris1278.dsgvo.dsgvo_profile_download', compact($vars)));
 
 				header("Content-type: text/csv");
-				header("Content-Disposition: attachment; filename=my_profile_data.csv");
+				header("Content-Disposition: attachment; filename=dsgvo_my_profile_data.csv");
 				header("Pragma: no-cache");
 				header("Expires: 0");
 
@@ -160,7 +160,7 @@ class ucp_listener implements EventSubscriberInterface
 	{
 		switch ($event['mode'])
 		{
-			case 'data_download':
+			case 'user_data_download':
 				$this->template->assign_vars([
 					'U_DSGVO_POSTS_DOWNLOAD'		=> $this->auth->acl_get('u_dsgvo_posts_download') ? append_sid("{$this->phpbb_root_path}ucp.$this->php_ext", 'mode=u_dsgvo_posts_download') : '',
 					]);
@@ -172,7 +172,7 @@ class ucp_listener implements EventSubscriberInterface
 					trigger_error('NOT_AUTHORISED');
 				}
 				header("Content-type: text/csv");
-				header("Content-Disposition: attachment; filename=my_post_data.csv");
+				header("Content-Disposition: attachment; filename=dsgvo_my_post_data.csv");
 				header("Pragma: no-cache");
 				header("Expires: 0");
 

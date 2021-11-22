@@ -20,7 +20,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, [
 	// Information For Versionscheck Metadaten
 	'DSGVO_LANG_DESC'							=>	'Deutsch (Du)',
-	'DSGVO_LANG_EXT_VER' 						=>	'1.0.1',
+	'DSGVO_LANG_EXT_VER' 						=>	'1.0.0',
 	'DSGVO_LANG_AUTHOR' 						=>	'Chris1278',
 	'DSGVO_DESC' 								=>	'Hier können die Einstellungen für die Erweiterung „%1$s“ (v%2$s) geändert werden.',
 	'DSGVO_MSG_LANGUAGEPACK_OUTDATED'			=>	'Hinweis: Das Sprachpaket dieser Erweiterung ist nicht mehr aktuell',

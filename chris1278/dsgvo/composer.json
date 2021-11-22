@@ -21,7 +21,7 @@
 	},
 	"extra": {
 		"display-name": "DSGVO/GDPR Private Download´s",
-			"lang-min-ver": "1.0.1",
+			"lang-min-ver": "1.0.0",
 			"soft-require": {
 			"phpbb/phpbb": ">= 3.2.6,<3.4.0@dev"
 		},
